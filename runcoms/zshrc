@@ -11,3 +11,65 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/aliases.zsh"
+# source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/spaceship.zsh"
+
+# Display time
+SPACESHIP_TIME_SHOW=true
+
+# Display username always
+SPACESHIP_USER_SHOW=always
+
+# SPACESHIP_GIT_SHOW=false
+spaceship remove git
+
+# this is the SPACESHIP_PROMPT_ORDER
+# here i remove everything i do not need
+spaceship add time           # Time stamps section
+spaceship add user           # Username section
+# spaceship remove dir            # Current directory section
+# spaceship remove host           # Hostname section
+# spaceship remove git            # Git section (git_branch + git_status)
+spaceship remove hg             # Mercurial section (hg_branch  + hg_status)
+# spaceship remove package        # Package version
+# spaceship remove node           # Node.js section
+spaceship remove bun            # Bun section
+spaceship remove deno           # Deno section
+# spaceship remove ruby           # Ruby section
+# spaceship remove python         # Python section
+spaceship remove elm            # Elm section
+spaceship remove elixir         # Elixir section
+spaceship remove xcode          # Xcode section
+spaceship remove swift          # Swift section
+spaceship remove golang         # Go section
+spaceship remove perl           # Perl section
+# spaceship remove php            # PHP section
+spaceship remove rust           # Rust section
+spaceship remove haskell        # Haskell Stack section
+spaceship remove scala          # Scala section
+spaceship remove java           # Java section
+spaceship remove lua            # Lua section
+# spaceship remove dart           # Dart section
+spaceship remove julia          # Julia section
+spaceship remove crystal        # Crystal section
+spaceship add docker         # Docker section
+spaceship add docker_compose # Docker section
+spaceship add aws            # Amazon Web Services section
+spaceship remove gcloud         # Google Cloud Platform section
+# spaceship remove venv           # virtualenv section
+spaceship remove conda          # conda virtualenv section
+spaceship remove dotnet         # .NET section
+spaceship remove ocaml          # OCaml section
+spaceship remove vlang          # V section
+# spaceship remove kubectl        # Kubectl context section
+spaceship remove ansible        # Ansible section
+# spaceship remove terraform      # Terraform workspace section
+spaceship remove pulumi         # Pulumi stack section
+spaceship remove ibmcloud       # IBM Cloud section
+# spaceship remove exec_time      # Execution time
+# spaceship remove async          # Async jobs indicator
+# spaceship remove line_sep       # Line break
+# spaceship remove battery        # Battery level and status
+# spaceship remove jobs           # Background jobs indicator
+# spaceship remove exit_code      # Exit code section
+# spaceship remove char           # Prompt character
