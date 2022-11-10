@@ -43,7 +43,7 @@ spaceship remove xcode          # Xcode section
 spaceship remove swift          # Swift section
 spaceship remove golang         # Go section
 spaceship remove perl           # Perl section
-# spaceship remove php            # PHP section
+spaceship remove php            # PHP section
 spaceship remove rust           # Rust section
 spaceship remove haskell        # Haskell Stack section
 spaceship remove scala          # Scala section
