@@ -27,3 +27,5 @@ alias curltime="curl -w \"@$HOME/curl-timing.txt\""
 # deactivate caps lock in ubuntu
 xmodmap -e "remove lock = Caps_Lock"
 # xmodmap -e "add lock = Caps_Lock"
+
+alias git-clean-branches="git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do git branch -D $branch; done"
