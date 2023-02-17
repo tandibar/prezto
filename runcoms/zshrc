@@ -77,4 +77,5 @@ SPACESHIP_EXIT_CODE_SHOW=true
 # # spaceship remove exit_code      # Exit code section
 # # spaceship remove char           # Prompt character
 
-export NODE_OPTIONS=--max_old_space_size=8192
+# export NODE_OPTIONS=--max_old_space_size=8192
+export NODE_OPTIONS=--max_old_space_size=16384
