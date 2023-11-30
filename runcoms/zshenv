@@ -10,8 +10,6 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-export NPM_TOKEN=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
-
 export JEST_MAX_WORKERS=5
 . "$HOME/.cargo/env"
 
