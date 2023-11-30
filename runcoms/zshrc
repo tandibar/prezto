@@ -79,3 +79,16 @@ SPACESHIP_EXIT_CODE_SHOW=true
 
 # export NODE_OPTIONS=--max_old_space_size=8192
 export NODE_OPTIONS=--max_old_space_size=16384
+
+# edgedb
+fpath+=~/.zfunc
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
+
+# bun completions
+[ -s "/home/andi/.bun/_bun" ] && source "/home/andi/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

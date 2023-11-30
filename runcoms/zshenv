@@ -9,3 +9,16 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export NPM_TOKEN=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
+
+export JEST_MAX_WORKERS=5
+. "$HOME/.cargo/env"
+
+
+# ANDROID SETUP
+# This will be using the Windows Host SDK tools
+export ANDROID_HOME="/home/andi/Android/Sdk"
+export WSL_HOST_IP=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2)
+export ADB_SERVER_SOCKET=tcp:$WSL_HOST_IP:5037
+PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"

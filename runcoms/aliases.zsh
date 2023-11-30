@@ -28,4 +28,10 @@ alias curltime="curl -w \"@$HOME/curl-timing.txt\""
 xmodmap -e "remove lock = Caps_Lock"
 # xmodmap -e "add lock = Caps_Lock"
 
-alias git-clean-branches="git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do git branch -D $branch; done"
+alias git-clean-merged-branches='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
+
+alias emu="cd /home/andi/Android/Sdk/emulator/ && /home/andi/Android/Sdk/emulator/emulator -avd Pixel_6_API_34"
+
+alias dcu="docker compose up -d"
+alias dcd="docker compose down"
+alias dc="docker compose"
