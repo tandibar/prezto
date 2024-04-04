@@ -27,3 +27,4 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_SDK_ROOT=${ANDROID_HOME}
 export PATH=${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${PATH}
+export PATH="$PATH:/usr/lib/dart/bin"

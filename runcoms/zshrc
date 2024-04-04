@@ -5,6 +5,14 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Display time
+SPACESHIP_TIME_SHOW=true
+# Display username always
+SPACESHIP_USER_SHOW=always
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_KUBECTL_SHOW=false
+SPACESHIP_KUBECTL_VERSION_SHOW=false
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -64,7 +72,9 @@ SPACESHIP_EXIT_CODE_SHOW=true
 # spaceship remove dotnet         # .NET section
 # spaceship remove ocaml          # OCaml section
 # spaceship remove vlang          # V section
-# # spaceship remove kubectl        # Kubectl context section
+# SPACESHIP_KUBECTL_SHOW=false
+# SPACESHIP_KUBECTL_VERSION_SHOW=false
+# spaceship remove kubectl        # Kubectl context section
 # spaceship remove ansible        # Ansible section
 # # spaceship remove terraform      # Terraform workspace section
 # spaceship remove pulumi         # Pulumi stack section
@@ -92,3 +102,6 @@ complete -o nospace -C /usr/bin/terraform terraform
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# ebase5 docker
+export HOST_IP=$(hostname -I | awk '{print $1}')
