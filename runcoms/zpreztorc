@@ -42,14 +42,13 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'history' \
   'node' \
-  'nvm-auto-use' \
   'prompt'\
   'spectrum' \
   'ssh' \
   'syntax-highlighting' \
   'terminal' \
   'completion' # is (completion) is slowing everything down
-  
+  # 'nvm-auto-use' \ # deactivated due to platformatic meraki  
 
 #
 # Autosuggestions
