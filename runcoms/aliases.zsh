@@ -2,6 +2,7 @@ export ANDI_PROJECTS_ROOT="/home/andi/projects"
 alias ebase="cd $ANDI_PROJECTS_ROOT/edscha/code/ebase5"
 alias tio="cd $ANDI_PROJECTS_ROOT/ticket-io/"
 alias schooljet="cd $ANDI_PROJECTS_ROOT/schooljet/"
+alias solawi="cd $ANDI_PROJECTS_ROOT/solawi/"
 
 myip() {
   ip=`dig +short myip.opendns.com @resolver1.opendns.com`
