@@ -105,3 +105,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # ebase5 docker
 export HOST_IP=$(hostname -I | awk '{print $1}')
+
+nvm use 20 --silent
